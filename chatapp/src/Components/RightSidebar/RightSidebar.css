@@ -1,0 +1,122 @@
+.rs {
+    color: white;
+    background: #001030;
+    position: relative;
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.rs-profile {
+    padding-top: 60px;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+}
+
+.rs-profile img {
+    width: 110px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.rs-profile h3 {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 0px;
+}
+
+.rs-profile p {
+    font-size: 10px;
+    font-weight: 300;
+    opacity: 80%;
+}
+
+.rs hr {
+    border-color: #ffffff50;
+    margin: 15px 0px;
+}
+
+.rs-media {
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+.rs-media p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.rs-media .media-grid {
+    max-height: 180px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.media-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f5ff;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.media-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.document-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.document-icon p {
+    font-size: 10px;
+    color: #333;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.rs button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #077eff;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 65px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .rs {
+        display: none;
+    }
+}
